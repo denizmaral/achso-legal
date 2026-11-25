@@ -35,7 +35,7 @@ sections, each 4-byte aligned
 | tag | content |
 |---|---|
 | `STRS` | string pool: u16 length + UTF-8; a string ref is the byte offset of its length (0 = empty) |
-| `LEMM` | 24-byte records: word, gloss, detailOffset, ipa (refs, u32), score u32, pos u8, gender u8 (m 1, f 2, n 4, plural-only 8), flags u8, level u8 |
+| `LEMM` | 24-byte records: word, gloss, detailOffset, ipa (refs, u32), score u32, pos u8, gender u8 (m 1, f 2, n 4, plural-only 8, adjectival noun 16: listed in its strong form, der Deutsche / ein Deutscher), flags u8, level u8 |
 | `DETL` | per lemma: (u16 tag, u16 count, u32 × count)… ending with tag 0. 1 senses, 2 noun forms (nom/gen/dat/acc sg, then pl), 3 verb forms (30 slots), 4 verb info, 5 prepositional objects, 6 case objects, 7 comparative/superlative, 8 examples (de, en, Tatoeba id, author, translation id, translation author), 9 compound head, 10 other plurals |
 | `SURF` | u32 count, then (u32 key, u32 lemma<<4 | kind) sorted by key — every inflected spelling → its lemma |
 | `DELS` | SymSpell index over folded headwords: header (K, P, prefixLength 7, maxQueryDistance 2, deepCore, deepDepth, tailDepth), keys u32[K], rows u32[K+1], postings u32[P] |
