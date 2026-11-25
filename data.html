@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dictionary data | Achso</title>
+<meta name="description" content="Download the Achso German dictionary: a derived database under CC BY-SA 4.0, built from Wiktionary, Tatoeba and word counts from OpenSubtitles.">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to the data</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Achso</a>
+    <nav class="site-nav" aria-label="Legal pages">
+      <a href="index.html">Questions</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="data.html" aria-current="page">Dictionary data</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <div class="wrap hero">
+    <h1 class="keys">
+      <span class="sr-only">Dictionary data</span>
+      <span class="key" style="--i:0" aria-hidden="true">D</span><span class="key" style="--i:1" aria-hidden="true">a</span><span class="key" style="--i:2" aria-hidden="true">t</span><span class="key" style="--i:3" aria-hidden="true">e</span><span class="key" style="--i:4" aria-hidden="true">n</span>
+    </h1>
+    <svg class="wave" viewBox="0 0 540 26" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M2 16 C 60 2, 110 2, 170 14 S 280 26, 340 12 S 450 0, 538 14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+    <p class="lede">The German dictionary inside Achso is built from open data, so it is open too. You can download it and reuse it under the same licence.</p>
+    <ul class="doc-links">
+      <li><a href="https://github.com/denizmaral/achso-legal/releases/latest">Download the dictionary<span>The latest version: the pack (gzip), its checksums and the attribution</span></a></li>
+      <li><a href="https://github.com/denizmaral/achso-legal/blob/main/pack-format.md">File format<span>How the .achso pack is laid out</span></a></li>
+    </ul>
+  </div>
+
+  <div class="wrap">
+    <article class="qa" aria-labelledby="data-title">
+      <h2 id="data-title">About the data</h2>
+
+      <details open>
+        <summary>Licence</summary>
+        <div class="answer">
+          <p>The dictionary pack is a derived database licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)</a>. You may share and adapt it, also commercially, as long as you give credit and share your adaptations under the same licence. It is provided as is, without warranty.</p>
+        </div>
+      </details>
+
+      <details open>
+        <summary>Where it comes from</summary>
+        <div class="answer">
+          <p><a href="https://en.wiktionary.org">Wiktionary</a> (English and German editions, through <a href="https://kaikki.org">kaikki.org</a> / wiktextract), by the Wiktionary contributors, CC BY-SA 4.0: meanings, genders, plurals, case forms, conjugations, verb objects and translations.</p>
+          <p><a href="https://tatoeba.org">Tatoeba</a>, CC BY 2.0 FR: example sentences and their translations. Every sentence in the pack carries its Tatoeba number and author, and those of its translation.</p>
+          <p><a href="https://opus.nlpl.eu/OpenSubtitles/">OpenSubtitles corpus (OPUS)</a>, by P. Lison and J. Tiedemann: only word counts, used to rank words by how often they are used.</p>
+          <p>Achso’s own lists of verbs with prepositions and of two-way preposition sentences, CC BY-SA 4.0.</p>
+        </div>
+      </details>
+
+      <details open>
+        <summary>What was changed</summary>
+        <div class="answer">
+          <p>Entries were extracted from Wiktionary, normalised, checked against usage counts and a German spelling dictionary, ranked by frequency in German subtitles, combined with Tatoeba sentences and the curated lists, and written into one file the app reads in place. Each release lists its sources in ATTRIBUTION.md.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I credit it?</summary>
+        <div class="answer">
+          <p>For example: “German dictionary from Achso by Deniz Maral, built from Wiktionary (CC BY-SA 4.0) and Tatoeba (CC BY 2.0 FR); licensed CC BY-SA 4.0.” with a link to this page.</p>
+        </div>
+      </details>
+
+      <p>Questions about the data? Write to <a href="mailto:dnzmaral@gmail.com">dnzmaral@gmail.com</a>.</p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Deniz Maral. Achso is not affiliated with Apple Inc.</p>
+    <nav aria-label="Footer">
+      <a href="index.html">Questions</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="data.html">Dictionary data</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licence (Apple standard EULA)</a>
+      <a href="mailto:dnzmaral@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
